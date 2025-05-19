@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive Web Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Application</h1>
+    </header>
+
+    <main>
+        <section id="interactive-section">
+            <h2 id="dynamic-text">Click the button to change this text!</h2>
+            <button id="change-text-btn">Change Text</button>
+            <button id="hover-btn">Hover Over Me!</button>
+            <button id="double-click-btn">Double Click Me!</button>
+            <input type="text" id="keypress-input" placeholder="Type something..." />
+        </section>
+
+        <section id="image-gallery">
+            <h2>Image Gallery</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/150" alt="Image 1" class="gallery-image" />
+                <img src="https://via.placeholder.com/150" alt="Image 2" class="gallery-image" />
+                <img src="https://via.placeholder.com/150" alt="Image 3" class="gallery-image" />
+            </div>
+        </section>
+
+        <section id="tabs">
+            <h2>Tabs Example</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+            </div>
+            <div id="Tab1" class="tabcontent">
+                <h3>Tab 1</h3>
+                <p>Content for Tab 1.</p>
+            </div>
+            <div id="Tab2" class="tabcontent">
+                <h3>Tab 2</h3>
+                <p>Content for Tab 2.</p>
+            </div>
+        </section>
+
+        <section id="form-section">
+            <h2>Form Validation</h2>
+            <form id="user-form">
+                <input type="text" id="name" placeholder="Name" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="password" id="password" placeholder="Password" required minlength="8" />
+                <button type="submit">Submit</button>
+                <p id="form-feedback"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Interactive Web Application</p>
+    </footer>
+</body>
+</html>
